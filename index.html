@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <div class="heart" onclick="revealCard()">❤️ Surprise!</div>
+            <div id="blast-effect"></div>
+            <div class="card" id="invite-card">
+                <h2>You're Invited!</h2>
+                <img src="https://www.happywedding.app/blog/wp-content/uploads/2023/05/Engagement-Ring-with-Couple-Photography.jpg" alt="Engagement Photo" class="invitation-image">
+                <p><strong>Shaikh Sohel</strong> & <strong>Shabnam Pathan</strong></p>
+                <p>Venue: Nutana Wasahat, Jalna District</p>
+                <button id="more-details" onclick="openDetails()">Click for More Details</button>
+                <button onclick="downloadInvitation()">Download Invitation</button>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <h3>More Details</h3>
+                    <p>Join us on [Date] at Nutana Wasahat, Jalna District for our special day!</p>
+                    <button onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>

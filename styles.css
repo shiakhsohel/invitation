@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url('https://www.sevencorbett.com/wp-content/uploads/2022/06/rings_1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.heart {
+    font-size: 4rem;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+#blast-effect {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255,0,0,0.6), transparent);
+    animation: explode 1s ease-out;
+}
+
+@keyframes explode {
+    0% { width: 0; height: 0; }
+    100% { width: 300px; height: 300px; opacity: 0; }
+}
+
+.card {
+    display: none;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.invitation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#invite-card h2 {
+    color: #FF69B4;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff1493;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup h3 {
+    margin: 0;
+    color: #FF69B4;
+}
+
+.popup button {
+    background-color: #ff1493;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.popup button:hover {
+    background-color: #ff69b4;
+}
